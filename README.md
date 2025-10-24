@@ -154,5 +154,12 @@ On Windows. Get a normal Arduino Nano, or a clone. (No 'Every'!)
 
 - Your UserView can now be used
 
-
+### Tooling and other notes
+---------------------------
+The hardware is developed with KiCAD design software. For reference the schematic is also given as pdf document. 
+The firmware is written using the Microchip Studio 7.0 environment. You can get it through the URL [https://www.microchip.com/en-us/tools-resources](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio#Downloads); older Atmel versions will work as well. 
+The firmware is written for ATMega328p, with rewriting timer.c, board.c and serial.c it can be adapted for the ArduinoNano Every (with mcu ATmegaATmega4809).
+The PC software is fully based o Python. Version 3.12 was used during development, any version in the 3-series should be fine. 
+The requirements.txt contains the names of the needed packages to conveniently install them using 'pip'. For users who want to 
+adapt/develop the software to their likings, it is advised to install QT Designer as well.
 
